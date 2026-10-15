@@ -1,0 +1,36 @@
+{
+  "repeats": 2,
+  "folds_per_repeat": 5,
+  "development_n": 896,
+  "models": {
+    "logistic_regression": {
+      "accuracy": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "balanced_accuracy": {
+        "mean": 1.0,
+        "std": 0.0
+      },
+      "macro_f1": {
+        "mean": 1.0,
+        "std": 0.0
+      }
+    },
+    "decision_tree": {
+      "accuracy": {
+        "mean": 0.9324664002399234,
+        "std": 0.02585896089470161
+      },
+      "balanced_accuracy": {
+        "mean": 0.9286432011471352,
+        "std": 0.02419817119567714
+      },
+      "macro_f1": {
+        "mean": 0.9224062496188512,
+        "std": 0.028477412755168345
+      }
+    }
+  },
+  "selection_note": "Fixed model settings selected using the saved validation partition; CV is a development stability diagnostic, not an independent final test."
+}

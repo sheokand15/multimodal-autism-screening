@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.pytest_cache/
+.streamlit/secrets.toml
+data/raw/
+data/extracted/
+*.ckpt
+*.pt
+*.pth
+*.h5
+*.onnx

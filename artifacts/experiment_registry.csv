@@ -1,0 +1,10 @@
+track,experiment,selection,test_n,accuracy,balanced_accuracy,macro_f1,interpretation
+A,questionnaire_scoring_rule,fixed rule,158,1.0,1.0,1.0,screening-rule label reconstruction only; not clinical diagnosis
+A,logistic_regression,validation macro-F1,158,1.0,1.0,1.0,screening-rule label reconstruction only; not clinical diagnosis
+A,decision_tree,validation macro-F1,158,0.9113924050632911,0.9189290395057106,0.9006289308176101,screening-rule label reconstruction only; not clinical diagnosis
+A,train_majority,fixed rule,158,0.689873417721519,0.5,0.40823970037453183,screening-rule label reconstruction only; not clinical diagnosis
+B,unimodal_audio,validation macro-F1,15,0.3333333333333333,0.35,0.2777777777777778,synthetic file-level benchmark only
+B,unimodal_motion,validation macro-F1,15,0.26666666666666666,0.2125,0.19047619047619047,synthetic file-level benchmark only
+B,unimodal_physiology,validation macro-F1,15,0.13333333333333333,0.1,0.06250000000000001,synthetic file-level benchmark only
+B,early_fusion,validation macro-F1,15,0.26666666666666666,0.2125,0.19047619047619047,synthetic file-level benchmark only
+B,late_fusion,validation macro-F1,15,0.3333333333333333,0.2833333333333333,0.20833333333333337,synthetic file-level benchmark only

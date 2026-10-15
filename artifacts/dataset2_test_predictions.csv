@@ -1,0 +1,16 @@
+sample_id,true_label,late_fusion_prediction
+child_010,typical,severe_asd
+child_021,mild_asd,severe_asd
+child_026,severe_asd,severe_asd
+child_028,severe_asd,severe_asd
+child_031,mild_asd,typical
+child_033,severe_asd,severe_asd
+child_045,typical,typical
+child_048,moderate_asd,severe_asd
+child_059,severe_asd,typical
+child_060,moderate_asd,severe_asd
+child_067,typical,severe_asd
+child_078,mild_asd,severe_asd
+child_081,moderate_asd,mild_asd
+child_086,mild_asd,severe_asd
+child_096,severe_asd,severe_asd

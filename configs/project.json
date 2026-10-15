@@ -1,0 +1,19 @@
+{
+  "random_seed": 42,
+  "split": {"train": 0.70, "validation": 0.15, "test": 0.15, "stratify": true},
+  "track_a": {
+    "archive": "autism-screening-for-toddlers-data.zip",
+    "source_file": "Toddler Autism dataset July 2018.csv",
+    "target_column": "Class/ASD Traits ",
+    "predictors": ["A1", "A2", "A3", "A4", "A5", "A6", "A7", "A8", "A9", "A10"],
+    "excluded": ["Case_No", "Qchat-10-Score", "Class/ASD Traits "],
+    "positive_rule": "sum(A1..A10) > 3"
+  },
+  "track_b": {
+    "archive": "multimodal-autism-dataset-zip.zip",
+    "group": "sample_id",
+    "modalities_used": ["audio", "motion", "physiology"],
+    "modalities_excluded": ["image: index-to-file mapping unresolved"],
+    "labels_are_clinically_validated": false
+  }
+}

@@ -1,0 +1,877 @@
+{
+  "unimodal": {
+    "audio": {
+      "n": 15,
+      "accuracy": 0.3333333333333333,
+      "balanced_accuracy": 0.35,
+      "macro_f1": 0.2777777777777778,
+      "per_class": {
+        "mild_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "moderate_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "severe_asd": {
+          "precision": 0.5,
+          "recall": 0.4,
+          "f1": 0.4444444444444445,
+          "support": 5
+        },
+        "typical": {
+          "precision": 0.5,
+          "recall": 1.0,
+          "f1": 0.6666666666666666,
+          "support": 3
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          2,
+          2
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          2,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          0,
+          3
+        ]
+      ],
+      "class_order": [
+        "mild_asd",
+        "moderate_asd",
+        "severe_asd",
+        "typical"
+      ],
+      "validation_selected_regularization": 0.1
+    },
+    "motion": {
+      "n": 15,
+      "accuracy": 0.26666666666666666,
+      "balanced_accuracy": 0.2125,
+      "macro_f1": 0.19047619047619047,
+      "per_class": {
+        "mild_asd": {
+          "precision": 0.5,
+          "recall": 0.25,
+          "f1": 0.3333333333333333,
+          "support": 4
+        },
+        "moderate_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "severe_asd": {
+          "precision": 0.3333333333333333,
+          "recall": 0.6,
+          "f1": 0.42857142857142855,
+          "support": 5
+        },
+        "typical": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        }
+      },
+      "confusion_matrix": [
+        [
+          1,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          1,
+          3,
+          1
+        ],
+        [
+          1,
+          1,
+          1,
+          0
+        ]
+      ],
+      "class_order": [
+        "mild_asd",
+        "moderate_asd",
+        "severe_asd",
+        "typical"
+      ],
+      "validation_selected_regularization": 1.0
+    },
+    "physiology": {
+      "n": 15,
+      "accuracy": 0.13333333333333333,
+      "balanced_accuracy": 0.1,
+      "macro_f1": 0.06250000000000001,
+      "per_class": {
+        "mild_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "moderate_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "severe_asd": {
+          "precision": 0.18181818181818182,
+          "recall": 0.4,
+          "f1": 0.25000000000000006,
+          "support": 5
+        },
+        "typical": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          3,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          3
+        ],
+        [
+          0,
+          0,
+          3,
+          0
+        ]
+      ],
+      "class_order": [
+        "mild_asd",
+        "moderate_asd",
+        "severe_asd",
+        "typical"
+      ],
+      "validation_selected_regularization": 1.0
+    }
+  },
+  "early_fusion": {
+    "n": 15,
+    "accuracy": 0.26666666666666666,
+    "balanced_accuracy": 0.2125,
+    "macro_f1": 0.19047619047619047,
+    "per_class": {
+      "mild_asd": {
+        "precision": 0.5,
+        "recall": 0.25,
+        "f1": 0.3333333333333333,
+        "support": 4
+      },
+      "moderate_asd": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3
+      },
+      "severe_asd": {
+        "precision": 0.3333333333333333,
+        "recall": 0.6,
+        "f1": 0.42857142857142855,
+        "support": 5
+      },
+      "typical": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3
+      }
+    },
+    "confusion_matrix": [
+      [
+        1,
+        0,
+        3,
+        0
+      ],
+      [
+        0,
+        0,
+        2,
+        1
+      ],
+      [
+        0,
+        1,
+        3,
+        1
+      ],
+      [
+        1,
+        1,
+        1,
+        0
+      ]
+    ],
+    "class_order": [
+      "mild_asd",
+      "moderate_asd",
+      "severe_asd",
+      "typical"
+    ],
+    "validation_selected_regularization": 1.0
+  },
+  "late_fusion": {
+    "n": 15,
+    "accuracy": 0.3333333333333333,
+    "balanced_accuracy": 0.2833333333333333,
+    "macro_f1": 0.20833333333333337,
+    "per_class": {
+      "mild_asd": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 4
+      },
+      "moderate_asd": {
+        "precision": 0.0,
+        "recall": 0.0,
+        "f1": 0.0,
+        "support": 3
+      },
+      "severe_asd": {
+        "precision": 0.36363636363636365,
+        "recall": 0.8,
+        "f1": 0.5000000000000001,
+        "support": 5
+      },
+      "typical": {
+        "precision": 0.3333333333333333,
+        "recall": 0.3333333333333333,
+        "f1": 0.3333333333333333,
+        "support": 3
+      }
+    },
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        3,
+        1
+      ],
+      [
+        1,
+        0,
+        2,
+        0
+      ],
+      [
+        0,
+        0,
+        4,
+        1
+      ],
+      [
+        0,
+        0,
+        2,
+        1
+      ]
+    ],
+    "class_order": [
+      "mild_asd",
+      "moderate_asd",
+      "severe_asd",
+      "typical"
+    ]
+  },
+  "missing_modality_robustness": {
+    "without_audio": {
+      "n": 15,
+      "accuracy": 0.26666666666666666,
+      "balanced_accuracy": 0.2,
+      "macro_f1": 0.11764705882352941,
+      "per_class": {
+        "mild_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "moderate_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "severe_asd": {
+          "precision": 0.3333333333333333,
+          "recall": 0.8,
+          "f1": 0.47058823529411764,
+          "support": 5
+        },
+        "typical": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          1
+        ],
+        [
+          0,
+          0,
+          4,
+          1
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ]
+      ],
+      "class_order": [
+        "mild_asd",
+        "moderate_asd",
+        "severe_asd",
+        "typical"
+      ]
+    },
+    "without_motion": {
+      "n": 15,
+      "accuracy": 0.3333333333333333,
+      "balanced_accuracy": 0.31666666666666665,
+      "macro_f1": 0.2678571428571429,
+      "per_class": {
+        "mild_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "moderate_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "severe_asd": {
+          "precision": 0.42857142857142855,
+          "recall": 0.6,
+          "f1": 0.5,
+          "support": 5
+        },
+        "typical": {
+          "precision": 0.5,
+          "recall": 0.6666666666666666,
+          "f1": 0.5714285714285715,
+          "support": 3
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          3,
+          0,
+          0,
+          0
+        ],
+        [
+          1,
+          0,
+          3,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          2
+        ]
+      ],
+      "class_order": [
+        "mild_asd",
+        "moderate_asd",
+        "severe_asd",
+        "typical"
+      ]
+    },
+    "without_physiology": {
+      "n": 15,
+      "accuracy": 0.26666666666666666,
+      "balanced_accuracy": 0.2,
+      "macro_f1": 0.14285714285714285,
+      "per_class": {
+        "mild_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 4
+        },
+        "moderate_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "severe_asd": {
+          "precision": 0.4444444444444444,
+          "recall": 0.8,
+          "f1": 0.5714285714285714,
+          "support": 5
+        },
+        "typical": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          3,
+          1
+        ],
+        [
+          2,
+          0,
+          0,
+          1
+        ],
+        [
+          0,
+          0,
+          4,
+          1
+        ],
+        [
+          0,
+          1,
+          2,
+          0
+        ]
+      ],
+      "class_order": [
+        "mild_asd",
+        "moderate_asd",
+        "severe_asd",
+        "typical"
+      ]
+    }
+  },
+  "development_repeated_stratified_group_cv": {
+    "repeats": 2,
+    "folds_per_repeat": 5,
+    "development_n": 85,
+    "models": {
+      "audio": {
+        "accuracy": {
+          "mean": 0.37281647746818025,
+          "std": 0.08468056141203466
+        },
+        "balanced_accuracy": {
+          "mean": 0.33458333333333334,
+          "std": 0.09124587763392483
+        },
+        "macro_f1": {
+          "mean": 0.3174938868321221,
+          "std": 0.08727885182060699
+        }
+      },
+      "motion": {
+        "accuracy": {
+          "mean": 0.28913484692122465,
+          "std": 0.123649949132581
+        },
+        "balanced_accuracy": {
+          "mean": 0.25583333333333336,
+          "std": 0.1118585968042347
+        },
+        "macro_f1": {
+          "mean": 0.22568376240202864,
+          "std": 0.11129328341279698
+        }
+      },
+      "physiology": {
+        "accuracy": {
+          "mean": 0.3111072411420709,
+          "std": 0.04332566590058353
+        },
+        "balanced_accuracy": {
+          "mean": 0.25083333333333335,
+          "std": 0.03777164982978898
+        },
+        "macro_f1": {
+          "mean": 0.17336580365798632,
+          "std": 0.03712227029014867
+        }
+      },
+      "early_fusion": {
+        "accuracy": {
+          "mean": 0.26524595803233575,
+          "std": 0.09694277130737836
+        },
+        "balanced_accuracy": {
+          "mean": 0.23499999999999996,
+          "std": 0.09342175044811633
+        },
+        "macro_f1": {
+          "mean": 0.21436451706188547,
+          "std": 0.10326721478906026
+        }
+      },
+      "late_fusion": {
+        "accuracy": {
+          "mean": 0.33431630546955626,
+          "std": 0.088397634492281
+        },
+        "balanced_accuracy": {
+          "mean": 0.2754166666666667,
+          "std": 0.07191306694565922
+        },
+        "macro_f1": {
+          "mean": 0.2147019481636355,
+          "std": 0.07075451812923791
+        }
+      }
+    },
+    "selection_note": "Fixed regularization selected using the saved validation partition; CV is a development stability diagnostic, not an independent final test."
+  },
+  "validation": {
+    "unimodal": {
+      "audio": {
+        "n": 15,
+        "accuracy": 0.3333333333333333,
+        "balanced_accuracy": 0.3208333333333333,
+        "macro_f1": 0.3208333333333333,
+        "per_class": {
+          "mild_asd": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "moderate_asd": {
+            "precision": 0.3333333333333333,
+            "recall": 0.3333333333333333,
+            "f1": 0.3333333333333333,
+            "support": 3
+          },
+          "severe_asd": {
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.20000000000000004,
+            "support": 5
+          },
+          "typical": {
+            "precision": 0.75,
+            "recall": 0.75,
+            "f1": 0.75,
+            "support": 4
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            1,
+            2,
+            0
+          ],
+          [
+            1,
+            1,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            3
+          ]
+        ],
+        "class_order": [
+          "mild_asd",
+          "moderate_asd",
+          "severe_asd",
+          "typical"
+        ]
+      },
+      "motion": {
+        "n": 15,
+        "accuracy": 0.26666666666666666,
+        "balanced_accuracy": 0.2375,
+        "macro_f1": 0.21666666666666665,
+        "per_class": {
+          "mild_asd": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "moderate_asd": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "severe_asd": {
+            "precision": 0.2,
+            "recall": 0.2,
+            "f1": 0.20000000000000004,
+            "support": 5
+          },
+          "typical": {
+            "precision": 0.6,
+            "recall": 0.75,
+            "f1": 0.6666666666666665,
+            "support": 4
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            2,
+            1
+          ],
+          [
+            2,
+            0,
+            1,
+            0
+          ],
+          [
+            2,
+            1,
+            1,
+            1
+          ],
+          [
+            0,
+            0,
+            1,
+            3
+          ]
+        ],
+        "class_order": [
+          "mild_asd",
+          "moderate_asd",
+          "severe_asd",
+          "typical"
+        ]
+      },
+      "physiology": {
+        "n": 15,
+        "accuracy": 0.3333333333333333,
+        "balanced_accuracy": 0.2625,
+        "macro_f1": 0.19285714285714284,
+        "per_class": {
+          "mild_asd": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "moderate_asd": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "severe_asd": {
+            "precision": 0.4444444444444444,
+            "recall": 0.8,
+            "f1": 0.5714285714285714,
+            "support": 5
+          },
+          "typical": {
+            "precision": 0.16666666666666666,
+            "recall": 0.25,
+            "f1": 0.2,
+            "support": 4
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            1,
+            2
+          ],
+          [
+            0,
+            0,
+            4,
+            1
+          ],
+          [
+            0,
+            0,
+            3,
+            1
+          ]
+        ],
+        "class_order": [
+          "mild_asd",
+          "moderate_asd",
+          "severe_asd",
+          "typical"
+        ]
+      }
+    },
+    "late_fusion": {
+      "n": 15,
+      "accuracy": 0.26666666666666666,
+      "balanced_accuracy": 0.2375,
+      "macro_f1": 0.23295454545454544,
+      "per_class": {
+        "mild_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "moderate_asd": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 3
+        },
+        "severe_asd": {
+          "precision": 0.16666666666666666,
+          "recall": 0.2,
+          "f1": 0.1818181818181818,
+          "support": 5
+        },
+        "typical": {
+          "precision": 0.75,
+          "recall": 0.75,
+          "f1": 0.75,
+          "support": 4
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          0,
+          2,
+          0
+        ],
+        [
+          2,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          0,
+          1,
+          3
+        ]
+      ],
+      "class_order": [
+        "mild_asd",
+        "moderate_asd",
+        "severe_asd",
+        "typical"
+      ]
+    }
+  },
+  "split_sizes": {
+    "train": 70,
+    "validation": 15,
+    "test": 15
+  },
+  "classes": [
+    "mild_asd",
+    "moderate_asd",
+    "severe_asd",
+    "typical"
+  ],
+  "modalities": [
+    "audio",
+    "motion",
+    "physiology"
+  ],
+  "caveat": "synthetic file-level benchmark only; no clinical or real-participant generalization"
+}
